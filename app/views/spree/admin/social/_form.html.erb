@@ -13,6 +13,12 @@
       <%= check_box_tag 'social[facebook]', '1', Spree::Config.facebook_button %>
     </li>
     <li>
+      <%= image_tag 'social/vkontakte_16.png' %>
+      <%= label_tag 'social[vkontakte]', 'Vkontakte' %>
+      <%= hidden_field_tag 'social[vkontakte]', '0' %>
+      <%= check_box_tag 'social[vkontakte]', '1', Spree::Config.vkontakte_button %>
+    </li>
+    <li>
       <%= image_tag 'social/pinterest_16.png' %>
       <%= label_tag 'social[pinterest]', 'Pinterest' %>
       <%= hidden_field_tag 'social[pinterest]', '0' %>

@@ -5,6 +5,7 @@ Spree::AppConfiguration.class_eval do
   preference :tumblr_button, :boolean, :default => false
   preference :pinterest_button, :boolean, :default => false
   preference :facebook_button, :boolean, :default => true
+  preference :vkontakte_button, :boolean, :default => true
   preference :delicious_button, :boolean, :default => false
   preference :reddit_button, :boolean, :default => false
 
@@ -14,4 +15,6 @@ Spree::AppConfiguration.class_eval do
   preference :facebook_verb_to_display, :string, :default => 'like'
   preference :facebook_color_scheme, :string, :default => 'light'
   preference :facebook_send_button, :boolean, :default => false
+
+  preference :vkontakte_app_id, :string
 end
