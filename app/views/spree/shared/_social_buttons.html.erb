@@ -5,13 +5,14 @@
         <%= render :partial => 'spree/social/facebook' %>
       </li>
     <% end %>
+  </ul>
+  <ul>
     <% if Spree::Config.vkontakte_button %>
       <li class="vkontakte">
         <%= render :partial => 'spree/social/vkontakte' %>
       </li>
     <% end %>
-  </ul>
-  <ul>
+
     <% if Spree::Config.twitter_button %>
       <li class="twitter">
         <%= render :partial => 'spree/social/twitter' %>
