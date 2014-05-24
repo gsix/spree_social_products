@@ -1,11 +1,10 @@
 <% unless Spree::Config.vkontakte_app_id.nil? %>
   <% content_for :head do %>
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?113"></script>
+    <script type="text/javascript">
+      VK.init({apiId: <%= Spree::Config.vkontakte_app_id %>, onlyWidgets: true});
+    </script>
   <% end %>
-
-  <script type="text/javascript">
-    VK.init({apiId: <%= Spree::Config.vkontakte_app_id %>, onlyWidgets: true});
-  </script>
 
   <div id="vk_like"></div>
   <script type="text/javascript">
