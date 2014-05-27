@@ -7,6 +7,8 @@ There is some default styling that works well with the default spree theme, but 
 
 ![Screenshot](http://i.minus.com/iPkrAfsR0nphT.png)
 
+Added buttons Russian social networks: vkontakte.ru
+
 
 Installation	
 =======
@@ -53,5 +55,11 @@ Spree::Config.facebook_send_button = false # true
 ```
 
 You may refer to https://developers.facebook.com/docs/reference/plugins/like/ to preview the looks of different settings.
+
+__NOTE:__ To enable the Vkontakte like button, you must update the Spree::Config.vkontakte_app_id setting. You can update this setting by running the following in the rails console:
+
+```
+Spree::Config.vkontakte_app_id = 'YOUR_VKONTAKTE_API_ID'
+```
 
 Copyright (c) 2012-2013 John Dyer, released under the New BSD License
